@@ -9,7 +9,7 @@ namespace LINQ
         static void Main(string[] args)
         {            
             var zachs = ListOfSloths.GetSloths();
-            var slothABCs = zachs.OrderBy(name => name.DiffSloths);
+            var slothABCs = zachs.OrderBy(name => name.DiffSloths.Length);
             foreach ( var s in slothABCs)
             {
                 Console.WriteLine(s.DiffSloths);
